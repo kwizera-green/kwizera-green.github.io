@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jeremie Green Climate Association</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0fff4;
+      color: #1a202c;
+    }
+    header {
+      background-color: #2f855a;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #38a169;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      padding: 10px;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 20px;
+    }
+    footer {
+      background-color: #2f855a;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+    .language-switch {
+      text-align: right;
+      padding: 5px 10px;
+      background: #c6f6d5;
+    }
+    .language-switch button {
+      margin-left: 10px;
+      background: #2f855a;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+    .gallery-img {
+      max-width: 200px;
+      margin: 10px;
+    }
+    .gallery-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="language-switch">
+    <button onclick="setLanguage('en')">English</button>
+    <button onclick="setLanguage('rw')">Kinyarwanda</button>
+  </div>
+  <header>
+    <h1>Jeremie Green Climate Association</h1>
+    <p id="slogan">Planting is a great way for greening tomorrow.</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#news">News</a>
+    <a href="#join">Join Us</a>
+    <a href="#donate">Donate</a>
+    <a href="#partners">Partners</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p id="aboutText">Jeremie Green Climate Association is a youth-led initiative from Rwanda, fighting climate change through tree planting and environmental education in Nyagatare, Gatsibo, and Gicumbi.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li>Tree Planting</li>
+      <li>Tree Nurseries</li>
+      <li>Green Leader Training</li>
+      <li>Awareness Campaigns</li>
+      <li>Climate Education</li>
+    </ul>
+  </section>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-container">
+      <img class="gallery-img" src="tree-planting1.jpg" alt="Tree Planting 1">
+      <img class="gallery-img" src="training-session.jpg" alt="Training Session">
+      <img class="gallery-img" src="nursery-site.jpg" alt="Nursery Site">
+    </div>
+  </section>
+
+  <section id="news">
+    <h2>News</h2>
+    <p>Dialogues on plant beauty and care will be shared here.</p>
+  </section>
+
+  <section id="join">
+    <h2>Join Us</h2>
+    <p>Become a volunteer or supporter. Everyone is welcome!</p>
+  </section>
+
+  <section id="donate">
+    <h2>Donate</h2>
+    <p>Support us via MTN 0780623492, Airtel 0781796058, or email: jeremiekwizera177@gmail.com</p>
+  </section>
+
+  <section id="partners">
+    <h2>Partners</h2>
+    <p>We work with schools, NGOs, and government partners to support green initiatives across Rwanda.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: jeremiekwizera177@gmail.com</p>
+    <p>Phone: +250 780 623 492 / +250 781 796 058</p>
+    <p>Website: www.jeremiegreen.org</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Jeremie Green Climate Association</p>
+  </footer>
+
+  <script>
+    function setLanguage(lang) {
+      if (lang === 'rw') {
+        document.getElementById("slogan").innerText = "Gutera ibiti ni inzira nziza yo kurengera ejo hazaza.";
+        document.getElementById("aboutText").innerText = "Jeremie Green Climate Association ni ihuriro ry’urubyiruko rwo mu Rwanda rirwanya imihindagurikire y’ikirere binyuze mu gutera ibiti no kwigisha abaturage.";
+      } else {
+        document.getElementById("slogan").innerText = "Planting is a great way for greening tomorrow.";
+        document.getElementById("aboutText").innerText = "Jeremie Green Climate Association is a youth-led initiative from Rwanda, fighting climate change through tree planting and environmental education in Nyagatare, Gatsibo, and Gicumbi.";
+      }
+    }
+  </script>
+</body>
+</html>
